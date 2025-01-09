@@ -22,7 +22,6 @@ func part1(arr [][]string) {
 		b, _ := strconv.Atoi(report[1])
 		increasing := b-a > 0
 
-		fmt.Println(report)
 		isSafe := true
 		for i := range report {
 			if i > 0 {
@@ -42,7 +41,6 @@ func part1(arr [][]string) {
 				}
 			}
 		}
-		fmt.Println("isSafe", isSafe)
 		if isSafe == true {
 			count += 1
 		}
@@ -60,7 +58,6 @@ func part2(arr [][]string) {
 
 		isSafe := true
 		error := false
-		fmt.Println(report)
 		for i := range report {
 			if i > 0 {
 				curr, _ := strconv.Atoi(report[i])
@@ -77,9 +74,7 @@ func part2(arr [][]string) {
 				if isSafe == false && error == false {
 					isSafe = true
 					error = true
-					fmt.Println("--------", i)
 					report = remove(report, i)
-					fmt.Println(report)
 					i = 0
 				} else if error == true {
 					break
