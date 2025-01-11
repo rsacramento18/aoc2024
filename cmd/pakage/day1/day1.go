@@ -24,7 +24,7 @@ func Run() {
 func part1(arr [][]string) {
 	orderedArr := orderPart1(arr)
 	sum := totalDistance(orderedArr)
-	fmt.Println("Part1 --- SUM --->", sum)
+	fmt.Println("Day1 --- part1 --- sum ---", sum)
 }
 
 func part2(arr [][]string) {
@@ -65,7 +65,7 @@ func part2(arr [][]string) {
 		sum += dist.x * dist.s * dist.r
 	}
 
-	fmt.Println("Part2 --- SUM --->", sum)
+	fmt.Println("Day1 --- part2 --- sum ---", sum)
 }
 
 func orderPart1(arr [][]string) [][]string {

@@ -32,3 +32,13 @@ func FromLinesToArray(lines []string) [][]string {
 	}
 	return arr
 }
+
+func FromLinesToArrayWithoutWhiteSpaces(lines []string) [][]string {
+	var arr [][]string
+
+	for _, line := range lines {
+		words := strings.Split(line, "")
+		arr = append(arr, words)
+	}
+	return arr
+}
