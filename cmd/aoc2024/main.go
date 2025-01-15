@@ -5,7 +5,8 @@ import (
 	// "github.com/rsacramento18/aoc2024/cmd/pakage/day2"
 	// "github.com/rsacramento18/aoc2024/cmd/pakage/day3"
 	// "github.com/rsacramento18/aoc2024/cmd/pakage/day4"
-	"github.com/rsacramento18/aoc2024/cmd/pakage/day5"
+	// "github.com/rsacramento18/aoc2024/cmd/pakage/day5"
+	"github.com/rsacramento18/aoc2024/cmd/pakage/day6"
 )
 
 func main() {
@@ -13,5 +14,6 @@ func main() {
 	// day2.Run()
 	// day3.Run()
 	// day4.Run()
-	day5.Run()
+	// day5.Run()
+	day6.Run()
 }
